@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    tools:context=".MainActivity"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/weather_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/button_background"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/cityName"
+        android:layout_width="280dp"
+        android:layout_height="72dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@color/middle_green"
+        android:hint="@string/enter_city"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        tools:ignore="Autofill,HardcodedText,RtlCompat,TextFields" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/button_background"
+        android:text="@string/search"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap,SpUsage,UnusedAttribute" />
+
+</RelativeLayout>
